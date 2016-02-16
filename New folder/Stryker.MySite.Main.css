@@ -1,0 +1,653 @@
+﻿/*** Who's Following Me Webpart ***/
+.gi-wfm-pager { display:-moz-box; -moz-box-pack:center; -moz-box-align:center; display:-webkit-box; -webkit-box-pack:center; -webkit-box-align:center; text-align: center; }
+.gi-wfm-search { padding: 10px; color:Black; }
+
+/*** Bulk Add Colleagues ***/
+.gi-bac-container .gi-bac-wapper { border: 1px solid #FFFFFF !important; width: 265px; margin-left:auto; margin-right:auto; }
+.gi-bac-wapper { border-bottom: 1px solid #BD6027; border-top: 1px solid #BD6027; padding: 10px; }
+.gi-bac-peoplepicker .ms-inputuserfield,
+.gi-bac-peoplepicker .ms-usereditor { width: 258px }
+.gi-bac-info,
+.gi-bac-message { border: 1px solid #DE712E; color: #555555; font-size: 11px; line-height: 13px; margin-bottom: 15px; padding: 5px 5px 5px 3px; width: 212px; }
+.gi-bac-message { background-color: #EEEEEE; border: 1px solid #FD9400; display: none; font-size: 12px; }
+.gi-bac-container .gi-bac-info { border: 1px solid #FFFFFF !important }
+.gi-bac-submit { background: none repeat scroll 0 0 #B72D53; float: right; height: 24px; width: 150px; }
+.gi-bac-submit a { display: block; font-size: 11px; font-weight: bold; height: 24px; margin: 6px 0 0; padding: 0 0 0 10px; position: relative; color: #FFFFFF; }
+.gi-bac-submit a span { font-size: 28px; font-weight: normal; line-height: 22px; padding-left: 8px; position: absolute; top: -5px; }
+
+/*** Bulk Add Colleagues link ***/
+.gi-bac-link { text-align: right; padding: 10px 20px 0px 0px; height: 25px; }
+.gi-bac-link a { font-family:Verdana; padding-left: 5px; vertical-align: top;}
+
+/*** Who I'm Following Webpart on colleagues tab ***/
+.gi-wif-imgwapper{margin:0 0 0 5px; padding:10px 10px 0 0;}
+.gi-wif-container .gi-wp-follow a {margin: 6px 0 20px 5px;}
+.gi-wif-profile { overflow:hidden; min-height:100px; margin:0 0 20px; padding:10px 0; border-bottom:1px solid #a9a9aa; }
+.gi-wif-profile a{ color:#DE712E !important; }
+.gi-wif-container .gi-profile-askmeabout { width:304px; }
+.gi-wif-container .ms-standardheader { margin: 10px 5px 0px 5px !important; border-top: 1px solid #A9A9AA !important; border-bottom: 1px solid #A9A9AA !important;  }
+.gi-wif-emptydata { font-size: 12px; padding: 10px; text-align: center; }
+.gi-wif-container .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3{color: #0072bc; font-family: Arial, Helvetica, sans-serif !important;}
+
+/*** Colleagues We Both Know ***/
+.gi-cwbk-container .gi-wp-rightpane { min-height:80px;}
+
+/*** Profile Picture Crop tool ***/
+.gi-pc-imgcontainer img{ vertical-align: middle;}
+.gi-pc-imgcontainer{ width: 200px;height: 200px;padding: 0px 15px;}
+.gi-pc-imgcontainer .ms-main input[type="submit"]{ margin-left: 10px;width: 80px;vertical-align: top;height: 25px;}
+.gi-pc-imgcontainer .ms-main input[type="file"]{height: 25px; }
+.gi-pc-container table{ height: 100%; width: 100%; border: 0px; cellspacing: 0px ; cellpadding: 0px; }
+.gi-pc-container #bodyTableCell { padding:7px;}
+.gi-pc-container .ms-dialogHeader{ padding: 10px 0px;}
+.gi-pc-container .ms-dialogHeaderDescription{ padding-left: 15px;}
+.gi-pc-container .ms-dialogHeadingDivider2{ height: 1px;}
+.gi-pc-container #bodyMain{ overflow: auto; height: 294px; width: 559px; background-color: #eeeeee;}
+.gi-pc-container .ms-main{padding: 20px;}
+.gi-pc-container .cropTD{padding: 5px;}
+.gi-pc-container #Buttons{padding: 20px; float: right;}
+.gi-pc-container .ms-dialogButtonCell{padding-right: 15px}
+.gi-pc-container #cropPanel{ vertical-align:top;}
+
+/*** Ask me about ***/
+.gi-ama-container .ms-WPBody { padding:10px 0; }
+.gi-ama-container .ms-askmeabout-header { padding:0 0px 10px; margin:0 0 10px; color:#eebd43; font-weight:bold; border-bottom:1px solid #bd7142; }
+.gi-ama-container .ms-askmeabout { font-size:11px; padding:0px !important; }
+.gi-ama-container .ms-askmeabout span { display:inline-block; width:125px; margin:0 5px 5px 0; }
+.gi-ama-container .ms-askmeabout span img { display:none; }
+.gi-ama-container .ms-askmeabout span a { padding:0 !important; color:#ffffff !important; }
+.gi-ama-container div > a { color:#ffffff !important; text-decoration: underline; }
+.gi-ama-container .ms-wpContentDivSpace { padding: 10px; }
+.gi-ama-container .ms-wpContentDivSpace > div:first-child { padding: 0px !important; }
+.gi-ama-container .ms-askmeaboutfooter a { padding-left: 0px !important; }
+
+/*** Organizational Chart ***/
+.gi-moc-container .ms-wpContentDivSpace { padding-bottom: 5px; }
+.gi-moc-container #ReportingHierarchy { margin:0 0 5px; padding:0 10px 10px; border-bottom:1px solid #005955; }
+.gi-moc-container #ReportingHierarchy span { margin:0; font-style:italic; }
+.gi-moc-container #ReportingHierarchy .ms-orgname { color:#ffffff; }
+.gi-moc-container #ReportingHierarchy .ms-orgme { background:#338683; border:0; }
+.gi-moc-container #ReportingHierarchy span nobr { white-space:normal; }
+.gi-moc-container img[src*="reportsup.gif"] { overflow:hidden; width:10px; height:0; padding:10px 0 0; background:url('/_layouts/images/StrykerGlobalIntranet/reportsup.png') top left no-repeat; }
+.gi-moc-container td[style*="hierbottom.gif"] { background:url('/_layouts/images/StrykerGlobalIntranet/hierbottom.png') !important; }
+.gi-moc-container td[style*="hiertop.gif"] { background:url('/_layouts/images/StrykerGlobalIntranet/hiertop.png') !important; }
+
+/*** Organization View ***/
+.gi-ob-wrapper { border-right:#91cdf2 1px solid;border-bottom:#91cdf2 1px solid;}
+.gi-ob-wrapper .ms-WPBody { margin:0px; padding:0px;}
+.gi-ob-wrapper .ms-wpTdSpace, .gi-ob-wrapper ms-wpTdSpace {display:none}
+
+/*** Mysite pages bottom navigation ***/
+.gi-nav-bottom { height:auto; padding:0; background:none; margin:20px 0 0; padding:4px 0 0; border:0; border-top:1px solid #000000; }
+.gi-nav-bottom .menu-horizontal { float:none; margin:0; }
+.gi-nav-bottom .menu-horizontal ul { display:block !important; overflow:hidden;}
+.gi-nav-bottom .menu-horizontal ul li { float:left; width:auto; margin:0 4px 0 0; }
+.gi-nav-bottom .menu-horizontal ul li a {     display: block;
+    
+    padding: 8px 12px 8px 12px !important;
+    font-size: 14px;
+    background: #B2B4AE;
+    border: 0;
+    border-bottom: 4px transparent #cccccc;
+    color: #000;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+	}
+.gi-nav-bottom .menu-horizontal ul li a:hover { color:#ffffff; }
+.gi-nav-bottom .menu-horizontal ul li a.selected { background: #f2f2f3; */
+    border: 0;
+    
+    /* color: #288bb1; */
+    background: #ffb500;
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal; }
+.gi-nav-bottom .menu-horizontal ul li a.selected:hover { text-decoration:none; }
+
+/*** Page Edit Ribbon ***/
+.ms-cui-topBar2 { z-index:9999; }
+
+/*** Mysite page generic changes ***/
+.s4-ca { background:none; }
+.s4-ba { padding:0; }
+.ms-PartSpacingVertical { display:none; }
+#MSO_ContentTable { width:940px; margin:0; }
+
+/*** My Stream ***/
+.gi-myStream #TopRow {display: none;}
+.gi-myStream #ZoneTable { background:#f2f2f3; }
+.gi-myStream #MiddleLeftCell { width:630px; padding:0 10px 10px 0; }
+.gi-myStream #MiddleLeftCell table { background:#f2f2f3; }
+.gi-myStream #MiddleLeftCell table table { background:none; }
+.gi-myStream #MiddleLeftCell table .ms-wpContentDivSpace { margin:0; }
+.gi-myStream #MiddleLeftCell .gi-wp-container .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 { /* margin:10px 10px 4px 0; */ }
+.gi-myStream #MiddleLeftCell .ngNewsFeedPanel { }
+.gi-myStream #MiddleLeftCell .ngStatusHolder #ngInputActions .ngActionBar { display:block; }
+.gi-myStream #MiddleLeftCell .ngStatusHolder #ngInputActions .ngInputActionHolder { display: block; padding-bottom:0px; }
+.gi-myStream #MiddleRightCell { padding:0 0 10px; }
+
+/*** Sphere WebPart ***/
+.gi-myStream .wp_shpere_link { float: right; padding: 30px 10px; width: 150px; } 
+.gi-myStream .wp_shpere_container { margin: -10px; }
+
+/***Sphere Page ***/
+.SpherePage .ngMain { background-color: rgb(242, 242, 243); padding-top: 1px; }
+.SpherePage .ngMain>table{border-collapse:collapse}
+.SpherePage .sphere_activitystream_headerborder { margin-bottom: 5px; border-bottom: 1px solid #000; margin-left: 85px; width: 545px; height: 5px; }
+.SpherePage .ngGroupPageTitle  {color:#ffffff; background:rgb(40, 139, 177); width:525px; padding: 14px 10px 4px 10px; font-weight:700; font-size:18px;font-family:Arial, Helvetica, sans-serif}
+.SpherePage .ngGroupPageTitle {border-color:#000; margin-left:85px; margin-bottom:0px}
+.SpherePage .sphere_members_headerborder { margin-bottom: 5px; border-bottom: 1px solid #000; }
+.SpherePage #ngGroupMembersDiv { background-color: #DE712E; padding: 10px 0 5px 0px; margin: 0px;}
+.SpherePage #ngMemberDiv span { color: #555; }
+.SpherePage div.ngContextMembers.ngWrapper  {  padding-top:0px; margin-top:0px}
+.SpherePage #ngGroupMembersHolder { color: #fff; }
+.SpherePage #ngGroupMembersHolder div.ngGroupMembersHeader { padding: 14px 10px 4px 10px; margin-bottom: 4px; background: rgb(222, 113, 46); font-size: 18px; font-family: Arial, Helvetica, sans-serif; border-bottom: 1px solid #000;}
+.SpherePage #ngGroupMembersHolder div#ngGroupMembersDiv a{ float:left;}
+.SpherePage #ngGroupMembersHolder div#ngGroupMembersDiv img{ border: none; width:auto; height:auto; max-width: 80px;max-height:80px; margin-top:0px; margin-bottom:0px; padding: 0px 8px;}
+.SpherePage #ngGroupMembersHolder div#ngGroupMembersDiv a.ngUser{padding-top: 5px;color:#fff; font-weight:bold; font-size:12px; font-family:Arial, Helvetica, sans-serif; vertical-align:top; width:150px; padding-left: 5px;}
+.SpherePage .ngGroupMember:after, .SpherePage .ngGroupMember:before { display: table; content: ""; }
+.SpherePage .ngGroupMember:after { clear: both; }
+.SpherePage .ngGroupMember {border-top: 1px solid #BD6027; border-bottom: 1px solid #BD6027; padding: 0px; margin: 0 0 10px;}
+.SpherePage #joinLeave { position: relative; margin: -50px 0px 20px 92px; width: 200px; }
+.SpherePage #joinLeave a#joinLeaveAction { display:block; margin:0 0 10px; padding:8px 10px 4px; font-weight:bold; }
+.SpherePage #joinLeave a#joinLeaveAction.ngJoin { background:url('/_layouts/images/StrykerGlobalIntranet/join_community_plus.png') top right no-repeat; color:#ffffff !important; font-size:16px; height: 26px;}
+.SpherePage #joinLeave a#joinLeaveAction.ngLeave { background:url('/_layouts/images/StrykerGlobalIntranet/join_community_minus.png') top right no-repeat; color:#ffffff !important; font-size:12px; height: 26px;} 
+.SpherePage #ctl00_PlaceHolderMain_ContextMembersWebPart {margin:0 10px 20px 15px}
+.SpherePage .ngContextMembers  #pagingControl {text-align:center; padding-bottom:10px}
+
+/******************************
+   Profile
+******************************/
+/*** As seen by ***/
+.ms-profileasseenby {     height: 30px;
+    line-height: 30px;
+    margin: -24px 0 20px;
+    padding: 0 10px 5px;
+    /* background: url('/_layouts/images/StrykerGlobalIntranet/bg_heading_view_png.jpg') top repeat-x; */
+    border: 0;
+    border-bottom: 1px solid #333333;
+    font-size: 14px;
+    background: white;
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif !important;
+	
+	}
+	
+	.gi-follow-outer-top {
+    background-color: #b2b4ae !important;
+	text-transform:lowercase;
+	font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif !important;
+	color:#000;
+	font-size:14px !important;
+}
+div#divlblFollowing {
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif;
+    color: #1c5867;
+}
+
+div#divlblFollowers {
+    color: #1c5867;
+}
+
+.ms-profileasseenby select {     width: 140px;
+    font-size: 14px;
+    color: #555555;
+    font-weight: normal;
+    background: #b2b4ae;
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif !important; }
+
+/*** Profile body ***/
+.gi-profileStatus .ms-contactcardtext2 { position:relative !important; height:70px; }
+.ms-identitypiecenoteindent { color:#a90432; }
+.ms-profilepageheader { border:0; background:none; }
+.ms-profilepageheader .ms-tztable { }
+.ms-profilepageheader .ms-tztable td { width:auto !important; padding:0 !important; }
+.ms-profilepageheader .ms-contactcardtext3 { font-family:Arial, Helvetica, sans-serif; }
+.ms-profilepageheader .ms-contactcardtext3 #ddlEditProfile { display:inline-block; height:16px; line-height:16px; padding:0 0 0 20px; font-size:10px; background:url('/_layouts/images/mossfgimg.png') 0 -196px no-repeat; }
+.ms-profilepageheader .gi-profilecard-container { position:relative; display:block; line-height:20px; }
+.ms-profilepageheader .ms-contactcardtext3 .ms-largethumbnailimage { width:144px; line-height:normal; }
+.ms-profilepageheader .ms-contactcardtext3 .ms-profilepicture { margin:0 20px 4px 0; text-align:left; }
+.ms-profilepageheader .ms-contactcardtext3 .ms-profilepicture img { padding:0; background:none; border:0; vertical-align:top;    margin-bottom: 15px; }
+.ms-profilepageheader .ms-contactcardtext3 .ms-contactcardtext1 { font-family:Arial, Helvetica, sans-serif; }
+.ms-profilepageheader .ms-contactcardtext3 .right .ms-contactcardtext3 { margin:0 0 10px; }
+.ms-profilepageheader .ms-contactcardtext3 #ProfileViewer_Name { border-bottom: 1px solid #000000; color: #288BB1; display: table; font-size: 22px; font-weight: bold; margin: 15px 0 4px 0px; padding: 0 0 4px; width: 776px;}
+.ms-profilepageheader .ms-contactcardtext3 #ProfileViewer_Name span { display:none; }
+.ms-profilepageheader .ms-contactcardtext3 #ProfileViewer_Name .gi-profileName { display: table-cell;
+    width: 636px;
+    vertical-align: bottom;
+    color: #000;
+    font-size: 21.5px;
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif !important; }
+.ms-profilepageheader .ms-contactcardtext3 .gi-profilecard-wapper { width:776px; margin:0 0 4px; padding:0 0 4px; border-bottom:1px solid #ffffff; }
+.ms-profilepageheader .ms-contactcardtext3 .gi-profilecard-wapper .gi-profilecard-inner { overflow:hidden; padding:10px; background:#ffffff; }
+.ms-profilepageheader .ms-contactcardtext3 .gi-profilecard-wapper h3 { color: #000;
+    font-size: 17.5px;
+    font-family: Futura LT W01 bold,Arial, Helvetica, sans-serif; }
+.ms-profilepageheader .ms-contactcardtext3 .gi-profilecard-wapper .gi-profilecard-leftcol { width:270px; float:left; }
+.ms-profilepageheader .ms-contactcardtext3 .gi-profilecard-wapper .gi-profilecard-rightcol { width:470px; float:right; }
+.ms-profilepageheader .ms-contactcardtext3 #ProfileViewer_ValueTitle { }
+.ms-profilepageheader .ms-contactcardtext3 #ProfileViewer_ValueFunction { }
+.ms-profilepageheader .ms-contactcardtext3 #ProfileViewer_ValueDept { }
+.ms-profilepageheader .ms-contactcardtext3 #ProfileViewer_TimeZone { margin:0 0 10px; }
+.ms-profilepageheader .ms-contactcardtext3 #ProfileViewer_TimeZone span { display: block; } 
+.ms-profilepageheader .ms-contactcardtext3 #ProfileViewer_ValueAboutMe { margin:0 0 8px; }
+.ms-profilepageheader .ms-contactcardtext3 .followUsers {  }
+.ms-profilepageheader .ms-contactcardtext3 .followUsers a { position:relative; display:block; width:120px; height:36px; line-height:40px; padding:0 10px; font-size:14px; font-weight:bold; }
+.ms-profilepageheader .ms-contactcardtext3 .followUsers a span { display:block !important; position:absolute; bottom:0; right:10px; height:36px; line-height:36px; font-size:34px; font-weight:normal; }
+.morelessLink{ display:block;text-align:right;}
+
+/*** Profile bottom ***/
+#giProfileComponents { margin:0 0 20px; background:#f2f2f3; } /*** would be nice to rename this ***/
+.ms-profilepagecontent { padding:0; }
+
+/*** Profile bottom left cell ***/
+#MiddleLeftCell { display:none; width:620px; padding:0px 20px 10px 0; }
+#giProfileComponents #MiddleLeftCell { width:630px; padding:0 10px 10px 0; }
+#MiddleLeftCell table { border-collapse: collapse; }
+#MiddleLeftCell td { vertical-align:top; }
+#MiddleLeftCell .s4-wpcell-plain table { padding:0; }
+#MiddleLeftCell .ms-WPHeader { background:none; }
+#MiddleLeftCell .ms-WPHeaderTd { padding:0 0 0 85px; border:0; }
+#giProfileComponents #MiddleLeftCell .ms-WPHeaderTd { padding:0; border:0; }
+#MiddleLeftCell .ms-wpTdSpace { display:none; }
+#MiddleLeftCell .bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 {    margin: 0px -80px 4px;}
+#MiddleLeftCell .bucket .gi-WPHeaderTdMenu { margin:10px 0 0; }
+
+#MiddleLeftCell .ngStatusHolder .ngActivityHeader, .SpherePage .ngStatusHolder .ngActivityHeader { display:none; }
+#MiddleLeftCell .ngPostWrapper, .SpherePage .ngPostWrapper { width:630px; }
+#MiddleLeftCell .ngStatusHolder #ngInputTypes, .SpherePage .ngStatusHolder #ngInputTypes { position:relative; width:452px; height:41px; margin:0; z-index:0; }
+#MiddleLeftCell .ngStatusHolder #ngInputTypes ul,  .SpherePage .ngStatusHolder #ngInputTypes ul{ position:absolute; top:0; left:0; float:left; height:28px; }
+#MiddleLeftCell .ngStatusHolder #ngInputTypes ul li,  .SpherePage .ngStatusHolder #ngInputTypes ul li{ height:22px; margin:0 6px 0 0; padding:10px 12px 0; background:#d7d7d7; }
+#MiddleLeftCell .ngStatusHolder #ngInputTypes ul li a, .SpherePage  .ngStatusHolder #ngInputTypes ul li a{ margin:0 0 -10px; padding:0 0 17px; color:#707070; font-weight:bold; font-size:12px; }
+#MiddleLeftCell .ngStatusHolder #ngInputTypes ul li.active , .SpherePage .ngStatusHolder #ngInputTypes ul li.active { /*background:#de712e;*/ }
+#MiddleLeftCell .ngStatusHolder #ngInputTypes ul li.active a , .SpherePage .ngStatusHolder #ngInputTypes ul li.active a { color:#ffffff !important; background:url('/_layouts/images/StrykerGlobalIntranet/tab_active_bg.png') bottom center no-repeat; }
+#MiddleLeftCell .ngStatusHolder .ngInput, .SpherePage  .ngStatusHolder .ngInput{ margin-top: -9px; margin-left:-5px; }
+#MiddleLeftCell .ngStatusHolder .ngInput .ngInputTo, .SpherePage  .ngStatusHolder .ngInput .ngInputTo{ width: 445px; min-height:21px; }
+#MiddleLeftCell .ngStatusHolder .ngInput textarea, .SpherePage  .ngStatusHolder .ngInput textarea{ /*border:0; width:428px !important; height:37px !important; padding:10px 12px 14px 12px; color:#000000 !important; font-size:11px !important; font-family: Arial,Helvetica,sans-serif; */}
+#MiddleLeftCell .ngStatusHolder #ngInputTypes .ngInput .ac_results,  .SpherePage .ngStatusHolder #ngInputTypes .ngInput .ac_results{ overflow:visible; }
+#MiddleLeftCell .ngStatusHolder #ngInputTypes .ngInput .ac_results ul, .SpherePage  .ngStatusHolder #ngInputTypes .ngInput .ac_results ul{ height:auto; background:#D7D7D7; }
+#MiddleLeftCell .ngStatusHolder #ngInputTypes .ngInput .ac_results ul li, .SpherePage .ngStatusHolder #ngInputTypes .ngInput .ac_results ul li { height:auto; margin:0; padding:0; }
+#MiddleLeftCell .ngStatusHolder #ngInputTypes .ngInput .ac_results ul .name, .SpherePage  .ngStatusHolder #ngInputTypes .ngInput .ac_results ul .name { line-height:normal; color:#DE712E; cursor:pointer; }
+
+#MiddleLeftCell .ngStatusHolder #ngInputActions #ngMainMicroblogTextLength, .SpherePage  .ngStatusHolder #ngInputActions #ngMainMicroblogTextLength{    
+    font-size: 10px;
+    height: 13px;
+    /* padding-right: 51px; */
+    float: right;
+    right: -75px;
+    position: relative;
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;}
+#MiddleLeftCell .ngStatusHolder #ngInputActions .ngInputActionHolder, .SpherePage .ngStatusHolder #ngInputActions .ngInputActionHolder { display: none; }
+#MiddleLeftCell .ngStatusHolder .ngPostButton, .SpherePage .ngStatusHolder .ngPostButton { margin: 0; position: absolute; top: 42px; left: 462px; }
+#MiddleLeftCell .ngStatusHolder .ngPostButton button, .SpherePage .ngStatusHolder .ngPostButton button {  width: 60px;
+    height: 30px;
+    background: #ffb500;
+    text-transform: uppercase;
+    position: relative;
+    right: -90px;
+    font-family: Futura LT W01 Book,Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    top: 175px;
+}
+
+
+#MiddleLeftCell .ngStatusHolder #ngInputActions .ngActionBar, .SpherePage .ngStatusHolder #ngInputActions .ngActionBar { display: none; }
+#MiddleLeftCell .ngStatusHolder #ngInputActions .ngActionBar .ngAttachmentUI .ngAttachFile a , .SpherePage .ngStatusHolder #ngInputActions .ngActionBar .ngAttachmentUI .ngAttachFile a{ background:url('/_layouts/images/StrykerGlobalIntranet/icon_attach_file.png') bottom center no-repeat; border:0; }
+#MiddleLeftCell .ngStatusHolder #ngInputActions .ngActionBar .ngAttachmentUI .ngItemSelector a , .SpherePage .ngStatusHolder #ngInputActions .ngActionBar .ngAttachmentUI .ngItemSelector a{ background:url('/_layouts/images/StrykerGlobalIntranet/icon_sharepoint_link.png') bottom center no-repeat; border:0; }
+#MiddleLeftCell .ngStatusHolder #ngInputActions .ngActionBar .ngAttachmentUI .ngAddPoll a , .SpherePage .ngStatusHolder #ngInputActions .ngActionBar .ngAttachmentUI .ngAddPoll a{ background:url('/_layouts/images/StrykerGlobalIntranet/icon_poll.png') bottom center no-repeat; border:0; }
+#MiddleLeftCell .ngStatusHolder #ngInputActions .ngActionBar .ngAttachmentUI .ngAttachLabel, .SpherePage  .ngStatusHolder #ngInputActions .ngActionBar .ngAttachmentUI .ngAttachLabel{ margin:7px 0 0 8px; color:#ffffff; font-size:10px; } 
+
+#MiddleLeftCell .ngStatusHolder #ngInputActions .ngTagSuggest ul , .SpherePage  .ngStatusHolder #ngInputActions .ngTagSuggest ul { float:left; margin:0; list-style:none; font-size:10px; color:#ffffff; }
+#MiddleLeftCell .ngStatusHolder #ngInputActions .ngTagSuggest ul li , .SpherePage .ngStatusHolder #ngInputActions .ngTagSuggest ul li { height:16px; line-height:16px; margin:0 4px 0 0; padding:0; font-weight:bold; }
+#MiddleLeftCell .ngStatusHolder #ngInputActions .ngTagSuggest ul li span.add , .SpherePage .ngStatusHolder #ngInputActions .ngTagSuggest ul li span.add{ font-weight:normal; }
+#MiddleLeftCell .ngStatusHolder #ngInputActions .ngTagSuggest ul li span.add:hover, .SpherePage  .ngStatusHolder #ngInputActions .ngTagSuggest ul li span.add:hover { text-decoration:underline; }
+#MiddleLeftCell .ngStatusHolder #ngInputActions #ngTagAllAction , .SpherePage .ngStatusHolder #ngInputActions #ngTagAllAction{ clear:left; float:left; padding:0; width:100%; }
+#MiddleLeftCell .ngStatusHolder #ngInputActions #ngTagAllAction a, .SpherePage .ngStatusHolder #ngInputActions #ngTagAllAction a { height:16px; line-height:16px; font-size:10px; color:#ffffff !important; font-weight:bold; }
+#MiddleLeftCell .ngControlDiv, .SpherePage .ngWrapper { clear: both; }
+#MiddleLeftCell .ngControlDiv #ngNewsFeedSettings { padding:10px 0; }
+.SpherePage #ngCommunityNewsFeedSettings{ border-bottom: 1px solid #90ADC5; padding: 10px 0px; }
+#MiddleLeftCell .ngControlDiv #ngNewsFeedSettings a { font-size:12px; font-weight:bold; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv {  border:0; border-top:1px solid #c2c2c2; }
+.SpherePage #ngNewsControlDiv{border-top:none;  padding-top:5px; border-bottom:none;}
+.SpherePage  #ngNewsControlDiv > span { margin-left:80px; color:#555;}
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv .ngFilterHeader, .SpherePage  .ngControlDiv #ngNewsControlDiv .ngFilterHeader{ margin:0 0 0 64px; padding:0 20px 1px 21px; color:#288bb1; font-size:18px; font-weight:bold; background:url('/_layouts/images/StrykerGlobalIntranet/icon_newsfeed.png') left center no-repeat; border:0; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv .ngFilterShow,
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv .ngFilterShow select, .SpherePage  .ngControlDiv #ngNewsControlDiv .ngFilterShow, .SpherePage  .ngControlDiv #ngNewsControlDiv .ngFilterShow select{ color:#555555; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv ul a, .SpherePage .ngControlDiv #ngNewsControlDiv ul a { height:16px; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv #ngTagFilterLink , .SpherePage #ngTagFilterLink{ padding:2px 4px 0 16px; background:url('/_layouts/images/StrykerGlobalIntranet/icon_tags.png') top left no-repeat; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv #ngSearchFilterLink, .SpherePage  a#ngSearchFilterLink { padding:2px 0 0 20px; background:url('/_layouts/images/StrykerGlobalIntranet/icon_search.png') top right no-repeat; border-left:1px solid #c2c2c2; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv #ngNotificationFilterLink { padding:2px 0 0 24px; background:url('/_layouts/images/StrykerGlobalIntranet/icon_bubble.png') top center no-repeat; border-left:1px solid #c2c2c2; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv #ngNotificationFilterLink #ngEventNotificationCountLink { margin:0 0 0 2px; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv #ngNotificationFilterLink .ngNotificationHasCount { color:#DE712E; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv .ngRefreshFilterLink, .SpherePage a.ngRefreshFilterLink { background:url('/_layouts/images/StrykerGlobalIntranet/icon_refresh.png') top right no-repeat; border-left:1px solid #c2c2c2; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv #ngManageGroupLink { display:none; }
+#MiddleLeftCell .ngControlDiv #ngNewsControlDiv #ngEventNotificationDiv .ngClose div { min-width: 95px; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow, .SpherePage  .ngNewsFeedContent .ngActivityRow
+{ border:0; padding:10px 0; border-top:1px solid #c2c2c2; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td, .SpherePage  .ngNewsFeedContent .ngActivityRow table td{ padding:10px; background:#ffffff; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td.ngActivityProfileIconHolder, .SpherePage  .ngNewsFeedContent .ngActivityRow table td.ngActivityProfileIconHolder{ width:84px; height:80px; padding:0; background:none; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td.ngActivityProfileIconHolder .ngActivityProfileIconHolder, .SpherePage  .ngNewsFeedContent .ngActivityRow table td.ngActivityProfileIconHolder .ngActivityProfileIconHolder{ width:80px; margin:0 4px 0 0; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td img.ngActivityProfileIcon, .SpherePage .ngNewsFeedContent .ngActivityRow table td img.ngActivityProfileIcon{ display:block; max-width:80px; max-height:80px; padding:0; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td .ngActionItem a , .SpherePage .ngNewsFeedContent .ngActivityRow table td .ngActionItem a { color:#000000 !important; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td .ngActionItem a.ngLikeLink,
+.SpherePage .ngNewsFeedContent .ngActivityRow table td .ngActionItem a.ngLikeLink { color:#DE712E !important; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td .ngActivityDate, .SpherePage .ngNewsFeedContent .ngActivityRow table td .ngActivityDate  { font-size:10px; }
+.ngActivityAction, .ngActivityDelete, .ngLikeCommentLink, .ngUnlikeCommentLink, .SpherePage .ngLikeCommentLink{ font-size:10px; }
+ .SpherePage #ngCommunitySubscriptionLink{ font-size:12px; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td .ngActivityMetaDiv,  .SpherePage .ngNewsFeedContent .ngActivityRow table td .ngActivityMetaDiv{ padding:0; background:none; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td .ngActivityMetaDiv td,
+	.SpherePage .ngNewsFeedContent .ngActivityRow table td .ngActivityMetaDiv td{ background:#fbf0d4; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td .ngActivityMetaDiv td.ngMetaActivityProfileIconHolder, 
+	.SpherePage .ngNewsFeedContent .ngActivityRow table td .ngActivityMetaDiv td.ngMetaActivityProfileIconHolder{ background:none; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td .ngMetaActivityProfileIconHolder{ width:55px; padding:0; }
+.SpherePage .ngNewsFeedContent .ngActivityRow table td .ngMetaActivityProfileIconHolder{ width:53px; padding:0; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td .ngMetaActivityProfileIconHolder .ngMetaActivityProfileIconHolder,
+	.SpherePage .ngNewsFeedContent .ngActivityRow table td .ngMetaActivityProfileIconHolder .ngMetaActivityProfileIconHolder{ width:55px; }
+#MiddleLeftCell .ngNewsFeedContent .ngActivityRow table td .ngMetaActivityProfileIconHolder .ngMetaActivityProfileIconHolder img,
+ .SpherePage  .ngNewsFeedContent .ngActivityRow table td .ngMetaActivityProfileIconHolder .ngMetaActivityProfileIconHolder img{ display:block; max-width:55px; max-height:55px; padding:0; }
+#MiddleLeftCell .activity_stream .ms-WPHeaderTd , .SpherePage  .activity_stream .ms-WPHeaderTd { padding:10px 0 0 85px !important; }
+#MiddleLeftCell .activity_stream #ngNewsControlDiv { border-bottom:0px; }
+
+/*** Profile bottom right cell ***/
+#MiddleRightCell { width:300px; padding:0 0 10px; }
+#giProfileComponents #MiddleRightCell,
+#ZoneTable #MiddleRightCell { width:280px; padding:10px;background:#fff }
+#MiddleRightCell .s4-wpcell-plain {  }
+#MiddleRightCell .s4-wpTopTable {  }
+#MiddleRightCell .s4-wpTopTable .ms-WPHeader { background:none; }
+#MiddleRightCell .s4-wpTopTable .ms-WPHeader .ms-wpTdSpace { display:none; }
+#MiddleRightCell .gi-wp-container .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd { padding-bottom: 0px; }
+
+/*** Edit My Profile ***/
+#ctl00_PlaceHolderMain_ProfileEditor table.ms-toolbar { padding:0 !important; }
+#ctl00_PlaceHolderMain_ProfileEditor .ms-toolbar { background:none; border:0; }
+#ctl00_PlaceHolderMain_ProfileEditor .ms-toolbar a.button { display:block; height:30px; line-height:30px; margin:0 10px 0 0; padding:0 10px; background:#acacac; color:#ffffff; font-size:14px; font-family: Arial,Helvetica,sans-serif !important;}
+#ctl00_PlaceHolderMain_ProfileEditor .ms-toolbar a.save.button { padding:0 10px 0 30px; background:url('/_layouts/images/StrykerGlobalIntranet/icon_save.png') 10px 8px no-repeat #e3874f; font-weight:bold; font-family: Arial,Helvetica,sans-serif !important;}
+#ctl00_PlaceHolderMain_ProfileEditor .ms-toolbar .ms-separator { display:none; }
+.ms-profileeditor { margin:0; }
+.ms-profileeditor td { background:#f2f2f4; }
+.ms-profileeditor .ms-WPHeader { background:none; }
+.ms-profileeditor .ms-WPHeader td { background:none; }
+.ms-profileeditor .ms-WPHeader .ms-WPTitle { height:24px; margin:20px 0 5px; padding:0 0 5px 10px !important; color:#288bb1; font-size:22px; font-weight:bold; border-bottom:1px solid #ffffff; font-family: Arial,Helvetica,sans-serif; }
+.ms-profileeditor .ms-WPHeader .ms-vh { padding:0 !important; font-size:14px; color:#707070; font-weight:bold; }
+.ms-profileeditor .ms-WPHeader .ms-vh div { height:24px; line-height:28px; margin:20px 0 5px; padding:0 0 5px 10px; border-bottom:1px solid #ffffff; }
+.ms-profileeditor .ms-rightAlign { padding:0 0 0 10px; text-align:right; font-size:14px; }
+.ms-profileeditor .ms-profilevalue { font-size:14px; font-weight:bold; }
+.ms-profileeditor .ms-profilevalue a { color:#DE712E;  }
+.ms-profileeditor .ms-profilevalue input { padding:4px 0; font-size:14px; }
+.ms-profileeditor .ms-profilevalue input.ms-buttonheightwidth2 { padding:6px 20px 6px 10px; border:1px solid #cdcdcd; background:#e5e5e5; color:#DE712E; font-size:14px; font-weight:bold; cursor:pointer; }
+.ms-profileeditor .ms-profiledescription { margin:4px 0 0; color:#288bb1; font-size:10px; font-weight:normal; font-family: Arial,Helvetica,sans-serif; }
+.ms-profileeditor .ms-authoringcontrols { font-size:14px; }
+.ms-profileeditor .ms-taxonomy-fieldeditor { padding:4px 0; font-size:14px; }
+.ms-profileeditor select { font-size:14px; }
+.ms-profileeditor input[type="checkbox"] { margin:0 6px 2px 0; }
+.ms-profileeditor img[src*="empty.gif"] { display:none; }
+
+/***  Activity Stream ***/
+.gi-wp-container, .bucket, #ctl00_PlaceHolderMain_ContextMembersWebPart { margin:0 0 20px; padding:0 0 4px; }
+.bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd  { display:block; margin:0 0 4px; padding:0; border:0; font-size:18px; font-weight:bold; }
+.bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 { display:block; margin:0 0 4px; font-size:18px; font-weight:bold;  }
+.bucket .s4-wpTopTable { padding:0; }
+.bucket .s4-wpTopTable .ms-WPBody,
+.bucket .s4-wpTopTable .ms-wpContentDivSpace { margin:0; font-size:12px; }
+.bucket .s4-wpcell-plain .ms-WPBorder { border:0; }
+.activity_stream .ms-WPHeader .ms-WPHeaderTd h3 {display:block;margin:0 0 4px;padding:0;border:0;font-size:18px;font-weight:700;text-align:left!important;}
+
+/*** Color specific ***/
+.dark_orange.bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 span,
+.dark_orange.bucket .s4-wpcell-plain .ms-WPBody,
+.dark_orange.bucket .s4-wpcell-plain .ms-wpContentDivSpace { background:#de712e; color:#ffffff; }
+.medium_green.bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 span,
+.medium_green.bucket .s4-wpcell-plain .ms-WPBody,
+.medium_green.bucket .s4-wpcell-plain .ms-wpContentDivSpace { background:#006864; color:#ffffff; }
+.light_blue.bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 span,
+.light_blue.bucket .s4-wpcell-plain .ms-WPBody,
+.light_blue.bucket .s4-wpcell-plain .ms-wpContentDivSpace,
+.light_blue.bucket .gi-WPHeaderTdMenu-inner { background:#FFF;  }
+.light_blue.bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 span { color:#000; }
+#MiddleLeftCell .light_blue.bucket .s4-wpcell-plain .ms-wpContentDivSpace { background:none; }
+.light_grey.bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 span,
+.light_grey.bucket .s4-wpcell-plain .ms-WPBody,
+.light_grey.bucket .s4-wpcell-plain .ms-wpContentDivSpace { background:#f2f2f3; }
+.light_grey.bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 span { color:#288bb1; }
+.dark_red.bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 span, 
+.dark_red.bucket .s4-wpcell-plain .ms-WPBody, 
+.dark_red.bucket .s4-wpcell-plain .ms-wpContentDivSpace { background: none repeat scroll 0 0 #A90432; color: #FFFFFF; }
+
+/********************************/
+.morecontent span {display: none;}
+.ngUploadFrame, .ngLinkSelectorFrame, .ngCommentUploadFrame { border:1px solid #E0E0E0 !important; }
+.clear { clear: both; }
+
+/***************************************
+Video Play Button Overlay Starts
+****************************************/
+.vidGallery {
+/*display:-moz-inline-block;
+    display:-moz-inline-box;*/
+display:block;
+position:relative;
+/*height:1%; */
+}
+
+.vidGallery span {
+position:absolute;
+top:50%;
+left:50%;
+width:50px;
+height:50px;
+margin-left:-25px;
+margin-top:-25px;
+background:url(/_layouts/Images/StrykerGlobalIntranet/playicon.png) center center no-repeat;
+}
+
+.vidGallery img {
+display:block;
+}
+
+/* Hide Webpart from Add Webpart List*/
+#WebPartAdderUpdatePanelContainer .ms-wpadder-itemColumn .ms-wpadder-itemTable .ms-wpadder-items>div[title='CommunityVideoList']      
+{
+ display: none;
+
+}
+#WebPartAdderUpdatePanelContainer .ms-wpadder-itemColumn .ms-wpadder-itemTable .ms-wpadder-items>div[title='Community Announcement List']      
+{
+ display: none;
+
+}
+
+/*Broadcast Message CSS*/
+.ActivityType-Microblogging.SubActivityType-Broadcast.ng-pinned-.ng-promoted- {
+            background-color: #E5F7FE!important;
+
+            }
+
+.ActivityType-Microblogging.SubActivityType-Broadcast.ng-pinned-.ng-promoted- span.ngSummary a:first-child+a{display:block;font-size:12px;color:#DE712E !important;font-weight:bold}
+.ActivityType-Microblogging.SubActivityType-Broadcast.ng-pinned-.ng-promoted- span.ngCommentText a:first-child+a{display:inline!important;font-size:8pt !important;color:#0072bc!important;font-weight:normal!important}
+
+
+
+
+
+.ms-contactcardtext3 div a span {
+    width: 60px;
+    height: 30px;
+    background: #ffb500;
+    text-transform: uppercase;
+    padding: 6px 20px 6px 22px;
+	color: #000;
+    font-size: 12px !important;
+}
+
+#ProfileViewer_ValueOfficePhone {
+    font-size: 14px;
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif !important;
+    color: #000;
+}
+div#Div3 {
+    font-size: 14px;
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif !important;
+    color: #000;
+}
+
+
+div#ProfileViewer_ValueEmail {
+    font-size: 14px;
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif !important;
+    color: #000;
+}
+
+div#ProfileViewer_Street {
+    font-size: 14px;
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif !important;
+    color: #000;
+}
+div#Div4 {
+    font-size: 14px;
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif !important;
+    color: #000;
+}
+div#Div5 {
+    font-size: 14px;
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif !important;
+    color: #000;
+}
+
+.gi-wp-container .s4-wpTopTable .ms-WPBody, .gi-wp-container .s4-wpTopTable .ms-wpContentDivSpace{
+	
+	
+	    font-size: 14px !important;
+		line-height:1.375;
+		
+	
+}
+
+
+#MiddleLeftCell .ngStatusHolder, .SpherePage .ngStatusHolder {
+    position: relative;
+    width: 98%;
+    /* margin: 0 0 0 85px; */
+    padding: 10px;
+    background: #b2b4ae;
+    border: 0;
+    height: 265px;
+}
+
+
+#MiddleLeftCell .ngStatusHolder .ngInput textarea {
+    /* border: 0; */
+    /* width: 428px !important; */
+    /* height: 37px !important; */
+    /* padding: 10px 12px 14px 12px; */
+    /* color: #000000 !important; */
+    /* font-size: 11px !important; */
+    /* font-family: Arial,Helvetica,sans-serif; */
+    border: 0;
+    /* width: 466px !important; */
+    width: 580px;
+    height: 90px !important;
+    padding: 12px;
+    color: #000 !important;
+    font-size: 14px !important;
+    font-weight: 700;
+}
+
+
+.ngInputTo span input.ac_input {
+    width: 600px;
+}
+
+
+
+#MiddleLeftCell .ngStatusHolder #ngInputTypes ul, .SpherePage .ngStatusHolder #ngInputTypes ul {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* float: left; */
+    /* height: 28px; */
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    float: left;
+    height: 32px;
+    margin: 0;
+}
+
+#MiddleLeftCell .ngStatusHolder #ngInputTypes ul li.active, .SpherePage .ngStatusHolder #ngInputTypes ul li.active {
+    /* background: #de712e; */
+}
+#MiddleLeftCell .ngStatusHolder #ngInputTypes ul li, .SpherePage .ngStatusHolder #ngInputTypes ul li {
+    /* height: 22px; */
+    /* margin: 0 6px 0 0; */
+    /* padding: 10px 12px 0; */
+    /* background: #d7d7d7; */
+    height: 32px;
+    line-height: 12px;
+    margin: 0 6px 0 0;
+    padding: 10px;
+    /* background: #d7d7d7; */
+    /* background: #545857; */
+    background: #545857;
+}
+
+
+#MiddleLeftCell .ngStatusHolder #ngInputTypes ul li.active a, .SpherePage .ngStatusHolder #ngInputTypes ul li.active a {
+    /* color: #ffffff !important; */
+    /* background: url('/_layouts/images/StrykerGlobalIntranet/tab_active_bg.png') bottom center no-repeat; */
+    color: #fff !important;
+    background: none !important;
+}
+
+#MiddleLeftCell .ngStatusHolder #ngInputTypes ul li a, .SpherePage .ngStatusHolder #ngInputTypes ul li a {
+    /* margin: 0 0 -10px; */
+    /* padding: 0 0 17px; */
+    /* color: #707070; */
+    /* font-weight: bold; */
+    /* font-size: 12px; */
+   
+    /* color: #707070 !important; */
+    color: #000 !important;
+    font-weight: 500;
+    font-family: Futura LT W01 Book,Arial, Helvetica, sans-serif !important;
+    font-size: 14px;
+    text-indent: 0;
+    background: none !important;
+}
+
+.light_blue.bucket .s4-wpcell-plain .ms-WPHeader .ms-WPHeaderTd h3 span, .light_blue.bucket .s4-wpcell-plain .ms-WPBody, .light_blue.bucket .s4-wpcell-plain .ms-wpContentDivSpace, .light_blue.bucket .gi-WPHeaderTdMenu-inner {
+    background: none;
+}
+
+
+
+h3.ms-standardheader.ms-WPTitle {
+    font-family: URWEgyptienneW01-Light,Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
